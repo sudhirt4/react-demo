@@ -14,6 +14,16 @@ webpackConfig.module.loaders = webpackConfig.module.loaders.concat([
                 sourceMap: true
             }
         }]
+    },
+    {
+        test: /\.css$/,
+        loaders: [{
+            loader: "style-loader"
+        }, {
+            loader: "css-loader", options: {
+                sourceMap: true
+            }
+        }]
     }
 ]);
 

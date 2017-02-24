@@ -6,6 +6,10 @@ webpackConfig.module.loaders = webpackConfig.module.loaders.concat([
     {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+    },
+    {
+        test: /\.css/,
+        loader: ExtractTextPlugin.extract('css-loader!sass-loader')
     }
 ]);
 
