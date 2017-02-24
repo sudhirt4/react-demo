@@ -6,7 +6,7 @@ class OrderTable extends React.Component {
 
     render() {
         return (
-            <div className="order-table main-content well row">
+            <div className="main-content order-table well">
                 <table className="table table-striped">
                     <thead>
                     <tr>

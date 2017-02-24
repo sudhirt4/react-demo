@@ -1,6 +1,7 @@
 import OrderNavigation from './OrderNavigation';
 import OrderSearchBar from  './OrderSearchBar';
 import OrdersTable from './OrderTable';
+import OrderInvoice from './OrderInvoice';
 
 class OrdersIndex extends React.Component {
 
@@ -10,14 +11,17 @@ class OrdersIndex extends React.Component {
 
     render() {
         return (
-            <div className="order-index main">
-                <div className="main-content row">
-                    <h2>Orders/<span>TN XXXXXXXX</span></h2>
+            <div className="main order-index">
+                <div className="main-content row hidden-xs">
+                    <div className="col-md-12">
+                        <h2>Orders/<span>TN XXXXXXXX</span></h2>
+                    </div>
                 </div>
                 <OrderNavigation/>
+                <OrderInvoice/>
                 <OrderSearchBar/>
                 <OrdersTable/>
-                <div className="main-content row">
+                <div className="main-content">
                     <span>Remarks</span>
                     <div className="well">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur

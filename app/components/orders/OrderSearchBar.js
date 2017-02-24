@@ -6,7 +6,7 @@ class OrderSearchBar extends React.Component {
 
     render() {
         return (
-            <div className="order-search-bar main-content well row">
+            <div className="main-content order-search-bar well">
                 <button>+</button>
                 <input/>
             </div>);

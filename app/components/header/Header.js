@@ -7,15 +7,17 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header row">
-                <div className="pull-left">
-                    <input/>
-                </div>
-                <div className="pull-right">
-                    <ul>
-                        <li>Hello, Somchai</li>
-                        <li>Twin Types Corporation</li>
-                    </ul>
-                    <button>V</button>
+                <div className="col-md-12 clearfix">
+                    <div className="pull-left">
+                        <input/>
+                    </div>
+                    <div className="pull-right header-options hidden-xs">
+                        <ul>
+                            <li>Hello, Somchai</li>
+                            <li>Twin Types Corporation</li>
+                        </ul>
+                        <button>V</button>
+                    </div>
                 </div>
             </div>)
     }

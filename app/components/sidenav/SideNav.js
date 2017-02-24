@@ -5,7 +5,7 @@ class SideNav extends React.Component {
     }
 
     render() {
-        return <div className="side-nav">SideNav</div>
+        return <div className="side-nav" style={ {display: 'none'} }>SideNav</div>
     }
 }
 
