@@ -1,5 +1,6 @@
-import SideNav from './SideNav';
-import Main from './Main';
+import SideNav from './sidenav/SideNav';
+import Header from './header/Header';
+import OrderIndex from './orders/OrderIndex';
 
 class App extends React.Component {
 
@@ -9,11 +10,12 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid">
-                <h1>Hello</h1>
-                <img src={require("../../assets/icons/logo-white.svg")}/>
+            <div className="react-demo-wrapper">
                 <SideNav/>
-                <Main/>
+                <div className="body-wrapper container-fluid">
+                    <Header/>
+                    <OrderIndex/>
+                </div>
             </div>
         )
     }
