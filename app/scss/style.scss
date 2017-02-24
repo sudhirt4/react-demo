@@ -1,4 +1,6 @@
-@import "base/manifest";
+@import 'utils/_manifest.scss';
+@import 'base/manifest';
+@import 'components/_manifest.scss';
 
 body {
   h1 {
