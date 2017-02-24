@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: $primary-color;
+
+  @include mq(md) {
+    display: flex;
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .header-search {
+    width: 100%;
+
+    a {
+      position: absolute;
+      top: 5px;
+
+      &.header-back-button {
+        left: 10px;
+        -moz-transform: scale(-1, -1);
+        -o-transform: scale(-1, -1);
+        -webkit-transform: scale(-1, -1);
+        transform: scale(-1, -1);
+      }
+
+      &.header-search-icon {
+        right: 10px;
+      }
+
+      img {
+        padding: 10px;
+        height: 40px;
+      }
+
+    }
+
+    input, span {
+      line-height: 32px;
+      margin: 9px 0;
+      text-align: center;
+      background: none;
+      border: none;
+      color: $white;
+      width: 100%;
+      font-size: 15px;
+      padding: 0 50px;
+    }
+
+    input {
+      display: none;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      display: block;
+    }
+
+    &.search-active {
+
+      input {
+        display: block;
+      }
+
+      span {
+        display: none
+      }
+
+    }
+
+    @include input-placeholder-color($white);
+
+    @include mq(md) {
+      width: auto;
+      flex: 1;
+
+      a {
+
+        &.header-back-button {
+          display: none;
+        }
+
+        &.header-search-icon {
+          left: 10px;
+          top: 14px;
+          right: auto;
+        }
+
+      }
+
+      input {
+        display: block;
+        text-align: left;
+        color: $black;
+        padding: 8px 50px;
+      }
+
+      span {
+        display: none;
+      }
+
+      @include input-placeholder-color($black);
+
+    }
+
+  }
+
+  .header-options {
+    border-left: 1px solid $border-color;
+    padding: 0;
+
+    ul {
+      display: inline-block;
+      padding: 15px 12px;
+      margin: 0;
+
+      li {
+
+        &:nth-child(1) {
+          color: $orange;
+        }
+
+        &:nth-child(2) {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+      }
+
+    }
+
+    button {
+      padding-left: 12px;
+      background: none;
+      outline: none;
+      border: none;
+
+      img {
+        height: 14px;
+        margin-top: -12px;
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+    }
+
+  }
+
+}
