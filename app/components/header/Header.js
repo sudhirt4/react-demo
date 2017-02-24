@@ -11,7 +11,7 @@ class Header extends React.Component {
                     <div className="pull-left">
                         <input/>
                     </div>
-                    <div className="pull-right header-options hidden-xs">
+                    <div className="pull-right header-options hidden-xs hidden-sm">
                         <ul>
                             <li>Hello, Somchai</li>
                             <li>Twin Types Corporation</li>

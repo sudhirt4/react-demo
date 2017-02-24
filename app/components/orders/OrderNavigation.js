@@ -15,11 +15,11 @@ class OrderNavigation extends React.Component {
                             <div className="col-md-6">
                                 <h3>CPF Saraburi</h3>
                                 <span>Highway 2, Kaeng Khoi Saraburi Thailand</span>
-                                <strong className="hidden-xs">+66 087 348 79 34</strong>
+                                <strong className="hidden-xs hidden-sm">+66 087 348 79 34</strong>
                             </div>
                             <div className="col-md-6">
                                 <ul>
-                                    <li className="hidden-xs">
+                                    <li className="hidden-xs hidden-sm">
                                         <span>Type</span>
                                         <SelectDropdown/>
                                     </li>
@@ -37,7 +37,7 @@ class OrderNavigation extends React.Component {
                     </div>
                 </div>
                 <div className="col-md-3">
-                    <button className="btn hidden-xs">Back</button>
+                    <button className="btn hidden-xs hidden-sm">Back</button>
                     <button className="btn">Update Order</button>
                 </div>
             </div>);

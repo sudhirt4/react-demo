@@ -12,7 +12,7 @@ class OrdersIndex extends React.Component {
     render() {
         return (
             <div className="main order-index">
-                <div className="main-content row hidden-xs">
+                <div className="main-content row hidden-xs hidden-sm">
                     <div className="col-md-12">
                         <h2>Orders/<span>TN XXXXXXXX</span></h2>
                     </div>
