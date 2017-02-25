@@ -49,7 +49,8 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlwebpackPlugin({
             title: 'React demo',
-            filename: 'index.html'
+            filename: 'index.html',
+            template: 'index.ejs'
         }),
         new webpack.ProvidePlugin({
             React: "react",
