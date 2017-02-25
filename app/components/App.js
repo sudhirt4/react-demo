@@ -1,6 +1,6 @@
 import SideNav from './sidenav/SideNav';
 import Header from './header/Header';
-import OrderEdit from './orders/OrderEdit';
+import OrderEdit from './orders/edit';
 
 class App extends React.Component {
 

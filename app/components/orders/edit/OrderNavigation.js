@@ -1,4 +1,4 @@
-import SelectDropdown from '../common/SelectDropdown';
+import SelectDropdown from '../../common/SelectDropdown';
 
 class OrderNavigation extends React.Component {
 
