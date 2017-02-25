@@ -1,0 +1,41 @@
+.order-table {
+
+  table {
+
+    thead {
+
+      th {
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+    }
+
+    tr {
+      
+      td {
+        padding: 18px 8px;
+      }
+
+    }
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+
+      img {
+        margin-bottom: -2px;
+        height: 14px;
+      }
+
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+  }
+
+}

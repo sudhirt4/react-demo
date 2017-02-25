@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  z-index: 101;
 
   button {
     position: absolute;
@@ -57,6 +56,7 @@
 body.overlay-active {
 
   .order-search-bar {
+    z-index: 101;
 
     button {
       -moz-transform: rotate(45deg);

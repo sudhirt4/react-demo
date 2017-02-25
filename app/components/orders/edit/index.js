@@ -17,7 +17,7 @@ class OrderEdit extends React.Component {
                 phone: '+66 087 348 79 34'
             },
             type: 'Retailers',
-            owner: {id: 1, name:'Tom Hanks'},
+            owner: {id: 1, name: 'Tom Hanks'},
             status: 'Pending'
         };
         this.updateOrder = this.updateOrder.bind(this);
@@ -40,8 +40,11 @@ class OrderEdit extends React.Component {
                 <OrdersTable/>
                 <h3>Remarks</h3>
                 <div className="common-block card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur
-                        consequuntur distinctio inventore ipsa labore magnam magni minima porro veritatis?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dignissimos quas! Aliquam amet
+                        aperiam asperiores assumenda at aut autem beatae delectus deserunt ea eligendi esse est
+                        explicabo fugiat impedit incidunt labore laboriosam laborum magni minima mollitia numquam odio
+                        officia officiis pariatur porro quidem quisquam rem reprehenderit rerum saepe, sapiente
+                        similique sint totam veritatis vero voluptatem? Amet ducimus et sapiente. Debitis.</p>
                 </div>
             </main>);
     }
