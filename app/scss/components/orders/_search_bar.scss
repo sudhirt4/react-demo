@@ -2,14 +2,20 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index: 101;
 
   button {
     position: absolute;
     background: none;
     padding: 0;
     border: none;
-    top: 18px;
+    top: 20px;
     left: 12px;
+
+    img {
+      height: 20px;
+    }
+
   }
 
   input {
@@ -17,6 +23,48 @@
     padding-left: 28px;
     border: none;
     outline: none;
+    font-size: 16px;
+  }
+
+  .pulsate {
+    display: none;
+    border: 3px solid #999;
+    -webkit-border-radius: 30px;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 21px;
+    left: 13px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.0
+  }
+
+  &.is-typing {
+
+    .pulsate {
+      display: block;
+    }
+
+    button {
+      display: none;
+    }
+
+  }
+
+}
+
+body.overlay-active {
+
+  .order-search-bar {
+
+    button {
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
   }
 
 }

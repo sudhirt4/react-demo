@@ -16,6 +16,7 @@ class App extends React.Component {
                     <Header/>
                     <OrderEdit/>
                 </div>
+                <div className="overlay"></div>
             </div>
         )
     }
