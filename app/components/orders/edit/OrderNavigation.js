@@ -52,9 +52,9 @@ class OrderNavigation extends React.Component {
     render() {
         const customerInfo = this.props.order.customerInfo;
         return (
-            <div className="common-block order-navigation">
-                <div className="order-navigation-options">
-                    <div className="order-info">
+            <div className="common-block order-nav">
+                <div className="order-nav-options">
+                    <div className="order-nav-info">
                         <h2>{customerInfo.name}</h2>
                         <ul>
                             <li>
@@ -65,31 +65,29 @@ class OrderNavigation extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className="order-dropdowns clearfix">
-                        <ul>
-                            <li className="hidden-xs hidden-sm">
-                                <span>Type</span>
-                                <SelectDropdown onChange={this.dropdownChange('type')}
-                                                options={this.state.type.options}
-                                                selected={this.state.type.selected}/>
-                            </li>
-                            <li>
-                                <span>Owned By</span>
-                                <SelectDropdown onChange={this.dropdownChange('owner')}
-                                                options={this.state.owner.options}
-                                                selected={this.state.owner.selected}
-                                                optionKey={'name'}/>
-                            </li>
-                            <li>
-                                <span>Status</span>
-                                <SelectDropdown onChange={this.dropdownChange('status')}
-                                                options={this.state.status.options}
-                                                selected={this.state.status.selected}/>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul className="order-nav-dropdowns">
+                        <li className="hidden-xs hidden-sm">
+                            <span>Type</span>
+                            <SelectDropdown onChange={this.dropdownChange('type')}
+                                            options={this.state.type.options}
+                                            selected={this.state.type.selected}/>
+                        </li>
+                        <li>
+                            <span>Owned By</span>
+                            <SelectDropdown onChange={this.dropdownChange('owner')}
+                                            options={this.state.owner.options}
+                                            selected={this.state.owner.selected}
+                                            optionKey={'name'}/>
+                        </li>
+                        <li>
+                            <span>Status</span>
+                            <SelectDropdown onChange={this.dropdownChange('status')}
+                                            options={this.state.status.options}
+                                            selected={this.state.status.selected}/>
+                        </li>
+                    </ul>
                 </div>
-                <div className="order-actions">
+                <div className="order-nav-actions">
                     <button className="btn btn-no-bg hidden-xs hidden-sm"
                             onClick={this.redirectBack}>
                         Back
