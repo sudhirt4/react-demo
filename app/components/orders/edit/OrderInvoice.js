@@ -7,12 +7,14 @@ class OrderInvoice extends React.Component {
     render() {
         return (
             <div className="common-block order-invoice card">
-                <table>
-                    <tbody>
+                <table className="table table-responsive">
+                    <thead>
                     <tr>
                         <td>Estimate Delivery Date</td>
                         <td><input type="text"/></td>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>Shipping</td>
                         <td><input type="text"/></td>
@@ -25,11 +27,13 @@ class OrderInvoice extends React.Component {
                         <td>Tax</td>
                         <td><input className="small" type="text"/> % 1,826,00</td>
                     </tr>
+                    </tbody>
+                    <tfoot>
                     <tr>
                         <td>Total</td>
-                        <td>THP 41,534.31</td>
+                        <td><span>THP 41,534.31</span></td>
                     </tr>
-                    </tbody>
+                    </tfoot>
                 </table>
             </div>);
     }

@@ -1,0 +1,91 @@
+.order-invoice {
+  padding: 0;
+
+  table {
+    margin-bottom: 0;
+    border: none;
+
+    tr {
+
+      td {
+        border: none;
+        padding: 0 12px 8px 12px;
+
+        &:last-child {
+          max-width: 150px;
+        }
+
+        input {
+          width: 100%;
+
+          &.small {
+            width: 64px;
+          }
+
+        }
+
+      }
+
+    }
+
+    thead {
+
+      tr {
+        border-bottom: 1px solid $faint-border-color;
+      }
+
+      td {
+
+        &:first-child {
+          width: 156px;
+        }
+        
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+    }
+
+    tbody {
+
+      tr:first-child {
+        td {
+          padding-top: 8px;
+        }
+      }
+
+    }
+
+    tfoot {
+      font-weight: bold;
+
+      tr {
+        border-top: 1px solid $faint-border-color;
+      }
+
+      td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        span {
+          font-size: 24px;
+        }
+
+      }
+
+    }
+
+    input {
+      border: 1px solid $border-color;
+    }
+
+  }
+
+  @include mq(sm) {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    min-width: 330px;
+  }
+
+}
