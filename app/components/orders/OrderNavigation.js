@@ -5,8 +5,20 @@ class OrderNavigation extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            order: {}
+            type: {
+                options: ['Retailers', 'Type 2', 'Type 3'],
+                selected: this.props.order.type
+            },
+            owner: {
+                options: this.props.owners,
+                selected: this.props.order.owner
+            },
+            status: {
+                options: ['Pending', 'Resolved'],
+                selected: this.props.order.status
+            }
         };
+
         this.dropdownChange = this.dropdownChange.bind(this);
         this.redirectBack = this.redirectBack.bind(this);
         this.updateOrder = this.updateOrder.bind(this);
@@ -14,9 +26,12 @@ class OrderNavigation extends React.Component {
 
     dropdownChange(stateKey) {
         return (selectedOption) => {
-            this.setState({
-                [stateKey]: selectedOption
-            });
+            this.setState((prevState) => ({
+                [stateKey]: {
+                    selected: selectedOption,
+                    options: prevState[stateKey]['options']
+                }
+            }));
         }
     }
 
@@ -27,23 +42,15 @@ class OrderNavigation extends React.Component {
 
     updateOrder(event) {
         event.preventDefault();
-        //TODO
+        this.props.updateOrder({
+            type: this.state.type.selected,
+            owner: this.state.owner.selected,
+            status: this.state.status.selected
+        });
     }
 
     render() {
         const customerInfo = this.props.order.customerInfo;
-        const types = {
-            options: ['Retailers', 'Type 2', 'Type 3'],
-            selected: this.props.order.type
-        };
-        const owners = {
-            options: this.props.owners,
-            selected: this.props.order.owner
-        };
-        const statuses = {
-            options: ['Pending', 'Resolved'],
-            selected: this.props.order.status
-        };
         return (
             <div className="main-content order-navigation">
                 <div className="order-navigation-options">
@@ -63,21 +70,21 @@ class OrderNavigation extends React.Component {
                             <li className="hidden-xs hidden-sm">
                                 <span>Type</span>
                                 <SelectDropdown onChange={this.dropdownChange('type')}
-                                                options={types.options}
-                                                selected={types.selected}/>
+                                                options={this.state.type.options}
+                                                selected={this.state.type.selected}/>
                             </li>
                             <li>
                                 <span>Owned By</span>
                                 <SelectDropdown onChange={this.dropdownChange('owner')}
-                                                options={owners.options}
-                                                selected={owners.selected}
+                                                options={this.state.owner.options}
+                                                selected={this.state.owner.selected}
                                                 optionKey={'name'}/>
                             </li>
                             <li>
                                 <span>Status</span>
                                 <SelectDropdown onChange={this.dropdownChange('status')}
-                                                options={statuses.options}
-                                                selected={statuses.selected}/>
+                                                options={this.state.status.options}
+                                                selected={this.state.status.selected}/>
                             </li>
                         </ul>
                     </div>

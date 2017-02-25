@@ -1,6 +1,6 @@
 import SideNav from './sidenav/SideNav';
 import Header from './header/Header';
-import OrderIndex from './orders/OrderIndex';
+import OrderEdit from './orders/OrderEdit';
 
 class App extends React.Component {
 
@@ -14,7 +14,7 @@ class App extends React.Component {
                 <SideNav/>
                 <div className="body-wrapper container-fluid">
                     <Header/>
-                    <OrderIndex/>
+                    <OrderEdit/>
                 </div>
             </div>
         )

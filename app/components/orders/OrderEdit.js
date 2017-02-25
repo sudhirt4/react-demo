@@ -3,7 +3,7 @@ import OrderSearchBar from  './OrderSearchBar';
 import OrdersTable from './OrderTable';
 import OrderInvoice from './OrderInvoice';
 
-class OrdersIndex extends React.Component {
+class OrderEdit extends React.Component {
 
     constructor(props, context) {
         super(props, context);
@@ -20,6 +20,11 @@ class OrdersIndex extends React.Component {
             owner: {id: 1, name:'Tom Hanks'},
             status: 'Pending'
         };
+        this.updateOrder = this.updateOrder.bind(this);
+    }
+
+    updateOrder(orderChanges) {
+        this.setState(orderChanges);
     }
 
     render() {
@@ -31,7 +36,7 @@ class OrdersIndex extends React.Component {
                         <h1><span>Orders / </span>{this.state.code}</h1>
                     </div>
                 </div>
-                <OrderNavigation order={this.state} owners={owners}/>
+                <OrderNavigation order={this.state} owners={owners} updateOrder={this.updateOrder}/>
                 <OrderInvoice/>
                 <OrderSearchBar/>
                 <OrdersTable/>
@@ -46,4 +51,4 @@ class OrdersIndex extends React.Component {
     }
 }
 
-export default OrdersIndex;
+export default OrderEdit;
