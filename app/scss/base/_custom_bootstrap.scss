@@ -1,7 +1,66 @@
 .react-demo-wrapper {
 
   .well {
-    margin-bottom: 0;
+    @include card();
+  }
+
+  .btn {
+    border-radius: 2px;
+    outline: none;
+
+    &.btn-no-bg {
+      background: none;
+      color: $black;
+      box-shadow: none;
+    }
+
+  }
+
+  .container-fluid {
+    padding-left: $bootstrap-page-padding-sm;
+    padding-right: $bootstrap-page-padding-sm;
+  }
+
+  .row {
+    margin-left: -$bootstrap-page-padding-sm;
+    margin-right: -$bootstrap-page-padding-sm;
+  }
+
+  .col-md-1, .col-md-2, .col-md-3,
+  .col-md-4, .col-md-5, .col-md-6,
+  .col-md-7, .col-md-8, .col-md-9,
+  .col-md-10, .col-md-11, .col-md-12 {
+    padding-left: $bootstrap-page-padding-sm;
+    padding-right: $bootstrap-page-padding-sm;
+  }
+
+  @include mq(md) {
+
+    .container-fluid {
+      padding-left: $bootstrap-page-padding-lg;
+      padding-right: $bootstrap-page-padding-lg;
+    }
+
+    .main-content {
+
+      &.row {
+        margin-left: -$bootstrap-page-padding-lg;
+        margin-right: -$bootstrap-page-padding-lg;
+      }
+
+      > {
+        .col-md-1, .col-md-2, .col-md-3,
+        .col-md-4, .col-md-5, .col-md-6,
+        .col-md-7, .col-md-8, .col-md-9,
+        .col-md-10, .col-md-11, .col-md-12 {
+          padding-left: $bootstrap-page-padding-lg;
+          padding-right: $bootstrap-page-padding-lg;
+        }
+
+      }
+
+    }
+
   }
 
 }

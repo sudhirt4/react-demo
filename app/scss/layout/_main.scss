@@ -1,0 +1,37 @@
+.main {
+  margin-top: 50px;
+  padding-top: 0;
+
+  @include mq(md) {
+    margin-top: 66px;
+    padding-top: $content-padding;
+  }
+
+  .main-content {
+    margin-bottom: $content-padding;
+
+    h1, h2 {
+      padding: 0;
+
+      span {
+        color: $light-text;
+      }
+
+    }
+
+    h1 {
+      margin: 20px 0;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .well {
+      padding: 16px;
+    }
+
+  }
+
+}

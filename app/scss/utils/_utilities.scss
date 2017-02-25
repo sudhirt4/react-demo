@@ -1,0 +1,6 @@
+@mixin remove-page-padding(){
+  margin-left: -$bootstrap-page-padding-sm;
+  margin-right: -$bootstrap-page-padding-sm;
+}
+
+

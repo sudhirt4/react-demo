@@ -24,3 +24,24 @@
     @error "No value could be retrieved for '#{$break}'";
   }
 }
+
+@mixin mq-min($break) {
+  @if $break == "sm" {
+    @media(max-width: $sm-device){
+      @content;
+    }
+  }
+  @else if $break == "md" {
+    @media(max-width: $md-device){
+      @content;
+    }
+  }
+  @else if $break == "lg" {
+    @media(max-width: $lg-device){
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for '#{$break}'";
+  }
+}
