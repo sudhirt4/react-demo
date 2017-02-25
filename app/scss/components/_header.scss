@@ -1,4 +1,4 @@
-.header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,9 +15,11 @@
   .header-search {
     width: 100%;
 
-    a {
+    a, button {
       position: absolute;
       top: 5px;
+      background: none;
+      border: none;
 
       &.header-back-button {
         left: 10px;
@@ -79,7 +81,7 @@
       width: auto;
       flex: 1;
 
-      a {
+      a, button {
 
         &.header-back-button {
           display: none;

@@ -30,24 +30,22 @@ class OrderEdit extends React.Component {
     render() {
         const owners = [{id: 1, name: 'Tom Hanks'}, {id: 2, name: 'John Doe'}]; //TODO: Fetch from API
         return (
-            <div className="main order-index">
-                <div className="main-content row hidden-xs hidden-sm">
-                    <div className="col-md-12">
-                        <h1><span>Orders / </span>{this.state.code}</h1>
-                    </div>
+            <main className="order-index">
+                <div className="common-block hidden-xs hidden-sm">
+                    <h1><span>Orders / </span>{this.state.code}</h1>
                 </div>
                 <OrderNavigation order={this.state} owners={owners} updateOrder={this.updateOrder}/>
                 <OrderInvoice/>
                 <OrderSearchBar/>
                 <OrdersTable/>
-                <div className="main-content">
+                <div className="common-block">
                     <span>Remarks</span>
                     <div className="well">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur
                             consequuntur distinctio inventore ipsa labore magnam magni minima porro veritatis?</p>
                     </div>
                 </div>
-            </div>);
+            </main>);
     }
 }
 

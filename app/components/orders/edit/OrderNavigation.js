@@ -52,7 +52,7 @@ class OrderNavigation extends React.Component {
     render() {
         const customerInfo = this.props.order.customerInfo;
         return (
-            <div className="main-content order-navigation">
+            <div className="common-block order-navigation">
                 <div className="order-navigation-options">
                     <div className="order-info">
                         <h2>{customerInfo.name}</h2>

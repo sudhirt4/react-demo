@@ -6,7 +6,7 @@ class OrderInvoice extends React.Component {
 
     render() {
         return (
-            <div className="main-content order-invoice">
+            <div className="common-block order-invoice">
                 <div className="well">
                     <table>
                         <tbody>

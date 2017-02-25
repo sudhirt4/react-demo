@@ -19,17 +19,17 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className="header">
-                <div className={"header-search " + (this.state.searchActive ? 'search-active' : '')}>
+            <header>
+                <form className={"header-search " + (this.state.searchActive ? 'search-active' : '')}>
                     <a href="#" className="header-back-button">
                         <img src={require('../../../assets/icons/arrow-purple.svg')}/>
                     </a>
-                    <a href="#" className="header-search-icon" onClick={this.toggleSearch}>
+                    <button type="submit" href="#" className="header-search-icon" onClick={this.toggleSearch}>
                         <img src={require('../../../assets/icons/magnifying-glass.svg')}/>
-                    </a>
+                    </button>
                     <span>Edit ORD07070707</span>
                     <input type="text" placeholder="Search here" ref={(input)=> {this.searchInput = input;}}/>
-                </div>
+                </form>
                 <div className="header-options hidden-xs hidden-sm">
                     <ul>
                         <li><span>Hello, Somchai</span></li>
@@ -39,7 +39,7 @@ class Header extends React.Component {
                         <img src={require('../../../assets/icons/arrow-grey.svg')}/>
                     </button>
                 </div>
-            </div>)
+            </header>)
     }
 }
 
