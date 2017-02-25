@@ -1,0 +1,188 @@
+$negative-margin: -8px;
+
+.order-navigation {
+
+  .order-navigation-options {
+
+    @include mq(md) {
+      @include card(16px);
+      display: flex;
+      flex: 1;
+    }
+
+  }
+
+  .order-info {
+
+    text-align: center;
+    margin-bottom: $content-padding;
+    font-size: 14px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      color: $light-text;
+
+      li {
+        margin-bottom: 4px;
+
+        &:nth-child(2) {
+          font-weight: bold;
+        }
+
+      }
+
+    }
+
+    @include mq-min(md) {
+      @include card(16px);
+      @include remove-page-padding();
+      margin-bottom: $content-padding;
+      box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.11), 0 2px 3px 0 rgba(98, 98, 114, 0.21);
+    }
+
+    @include mq(md) {
+      flex: 1;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .order-dropdowns {
+    margin-bottom: $content-padding;
+
+    > ul {
+
+      > li {
+        text-align: left;
+        font-size: 12px;
+        margin-bottom: 4px;
+
+        span {
+          font-size: 13px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .dropdown {
+          margin-top: 4px;
+
+          button {
+            width: 100%;
+            text-align: left;
+            background: $white;
+            color: $light-text;
+            border-color: $border-color;
+            font-size: 12px;
+
+            .caret {
+              float: right;
+              margin-top: 8px;
+            }
+
+          }
+
+          &.open {
+            button {
+              box-shadow: none;
+              background: $white;
+              color: $light-text;
+              border-color: $border-color;
+            }
+          }
+
+          .dropdown-menu {
+            width: 100%;
+
+            a {
+              color: $black;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    @include mq(md) {
+      margin-bottom: 0;
+
+      > ul {
+        float: right;
+        margin-top: 8px;
+
+        > li {
+          text-align: center;
+          padding-left: 16px;
+          margin-right: 12px;
+          height: 38px;
+          border-left: 1px solid $border-color;
+          float: left;
+          font-weight: bold;
+
+          &:first-child {
+            border: none;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          button {
+            width: auto;
+            min-width: 100px;
+          }
+
+          .dropdown {
+
+            .dropdown-menu {
+              width: auto;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .order-actions {
+
+    button {
+      background: $light-text;
+      color: $white;
+    }
+
+    @include mq(md) {
+      display: flex;
+      padding-bottom: 16px;
+      margin-left: 16px;
+
+      button {
+        margin-left: 6px;
+        min-width: 100px;
+        align-self: flex-end;
+        font-weight: bold;
+      }
+
+    }
+
+  }
+
+  @include mq(md) {
+    display: flex;
+  }
+
+}
