@@ -5,6 +5,10 @@ body {
   color: $black;
 }
 
+button {
+  outline: none;
+}
+
 .card {
   @include card();
 }

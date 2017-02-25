@@ -1,0 +1,22 @@
+.order-search-bar {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  button {
+    position: absolute;
+    background: none;
+    padding: 0;
+    border: none;
+    top: 18px;
+    left: 12px;
+  }
+
+  input {
+    width: 100%;
+    padding-left: 28px;
+    border: none;
+    outline: none;
+  }
+
+}

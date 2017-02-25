@@ -7,7 +7,9 @@ class OrderSearchBar extends React.Component {
     render() {
         return (
             <div className="common-block order-search-bar card">
-                <button>+</button>
+                <button>
+                    <img src={require('../../../../assets/icons/icon_plus.svg')}/>
+                </button>
                 <input/>
             </div>);
     }
