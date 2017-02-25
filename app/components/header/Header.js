@@ -14,7 +14,9 @@ class Header extends React.Component {
         this.setState(prevState => ({
             searchActive: !prevState.searchActive
         }));
-        this.searchInput.focus();
+        setTimeout(()=> {
+            this.searchInput.focus();
+        }, 50);
     }
 
     render() {
