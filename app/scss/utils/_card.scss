@@ -1,5 +1,4 @@
-@mixin card($padding: 12px){
-  margin-bottom: 0;
+@mixin card($padding: 12px) {
   background: $white;
   border: 1px solid $border-color;
   padding: $padding;

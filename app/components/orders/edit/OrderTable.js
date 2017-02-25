@@ -6,7 +6,7 @@ class OrderTable extends React.Component {
 
     render() {
         return (
-            <div className="common-block order-table well">
+            <div className="common-block order-table card">
                 <table className="table table-striped">
                     <thead>
                     <tr>
