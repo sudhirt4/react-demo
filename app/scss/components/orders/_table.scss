@@ -1,6 +1,7 @@
 .order-table {
 
   table {
+    margin-bottom: 0;
 
     thead {
 
@@ -13,7 +14,7 @@
     }
 
     tr {
-      
+
       td {
         padding: 18px 8px;
       }
@@ -34,6 +35,10 @@
 
     a {
       text-decoration: underline;
+
+      &.warning {
+        color: $red;
+      }
     }
 
   }

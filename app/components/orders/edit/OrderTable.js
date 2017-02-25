@@ -6,6 +6,10 @@ class OrderTable extends React.Component {
         super(props, context);
     }
 
+    renderCurrency(value) {
+        return value ? (<Currency value={value} symbol="THB "/>) : <a href="#" className="warning">Set Price</a>
+    }
+
     render() {
         let orders = [];
         for (var i = 2; i < 7; i++) {
@@ -21,6 +25,14 @@ class OrderTable extends React.Component {
                 total: 500798823
             });
         }
+        orders.push({
+            id: 7,
+            sku: 'TN SO 0000015',
+            description: 'Magnetic contactor - 9A (5.5 kW\,7.5 HP)\, control voltage 230 Vac',
+            brand: 'Schneider Electric',
+            discount: 30,
+            quantity: 16
+        });
         return (
             <div className="common-block order-table card table-responsive">
                 <table className="table table-striped">
@@ -44,16 +56,16 @@ class OrderTable extends React.Component {
                                 <td>{order.sku}</td>
                                 <td>{order.description}</td>
                                 <td>{order.brand}</td>
-                                <td><Currency value={order.list_price} symbol="THB "/></td>
+                                <td>{ this.renderCurrency(order.list_price) }</td>
                                 <td>{order.discount}%</td>
-                                <td><Currency value={order.net_price} symbol="THB "/></td>
+                                <td>{ this.renderCurrency(order.net_price) }</td>
                                 <td>
                                     {order.quantity}
                                     <button>
                                         <img src={require('../../../../assets/icons/icon_edit.svg')}/>
                                     </button>
                                 </td>
-                                <td><Currency value={order.total} symbol="THB " precision="2"/></td>
+                                <td>{ this.renderCurrency(order.total) }</td>
                                 <td><a href="#">Remove item</a></td>
                             </tr>)
                     })}
