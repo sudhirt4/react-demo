@@ -1,3 +1,5 @@
+import Currency from '../../utils/Currency';
+
 class OrderInvoice extends React.Component {
 
     constructor(props, context) {
@@ -32,7 +34,7 @@ class OrderInvoice extends React.Component {
                 </table>
                 <div className="order-invoice-footer">
                     <label>Total</label>
-                    <span>THP 41,534.31</span>
+                    <span><Currency value={41534.31} symbol="THB "/></span>
                 </div>
             </div>);
     }
