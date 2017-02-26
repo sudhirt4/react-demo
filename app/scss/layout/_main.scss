@@ -1,7 +1,14 @@
+@include mq(md) {
+  .body-wrapper {
+    margin-left: $sidenav-width;
+  }
+}
+
 main {
   margin-top: 50px;
   padding-top: 0;
   position: relative;
+  padding-bottom: 44px;
 
   @include mq(md) {
     margin-top: 66px;

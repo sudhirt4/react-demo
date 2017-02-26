@@ -1,0 +1,155 @@
+.side-nav {
+
+  .side-nav-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: $primary-color;
+    z-index: 110;
+    width: $sidenav-width;
+    padding-top: 50px;
+
+    @include mq(md) {
+      padding-top: 67px;
+      display: block;
+
+      .logo {
+        line-height: 67px !important;
+      }
+
+    }
+
+    .logo {
+      line-height: 50px;
+      color: $white;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: $sidenav-width;
+      z-index: 111;
+      background: $dark-primary-color;
+      transition: left 0.5s;
+    }
+
+    .user-greeting {
+      background: $white;
+      padding: 6px 20px;
+    }
+
+    .side-nav-list {
+
+      li {
+
+        a {
+          color: $sidenav-text;
+          display: block;
+          padding: 0 30px;
+          line-height: 68px;
+          font-weight: bold;
+          text-decoration: none;
+
+          img {
+            height: 18px;
+            width: 18px;
+            margin-bottom: -4px;
+            margin-right: 12px;
+          }
+
+        }
+
+        &.active {
+
+          a {
+            color: $white;
+            background-color: $dark-primary-color;
+            box-shadow: 0 -1px 0 0 #4C1367, 0 1px 0 0 $dark-primary-color;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  @include mq(md) {
+
+    .side-nav-footer {
+      width: $sidenav-width!important;
+    }
+
+  }
+
+  .side-nav-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    text-align: center;
+    background: $primary-color;
+    color: $sidenav-text;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding: 6px 0 8px 0;
+
+    span {
+      color: $white;
+      text-transform: none;
+      display: block;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+  }
+
+  .side-nav-overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $black;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+}
+
+@include mq-min(md) {
+
+  .side-nav-open {
+
+    .side-nav-content {
+      margin-left: 0;
+      display: block;
+
+      .logo {
+        display: block;
+        left: 0;
+      }
+
+    }
+
+    .side-nav-footer {
+      width: $sidenav-width;
+    }
+
+    .side-nav-overlay {
+      display: block;
+    }
+
+    @include mq(md) {
+      display: none;
+    }
+
+  }
+
+}

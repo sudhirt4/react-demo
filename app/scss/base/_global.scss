@@ -22,6 +22,10 @@ button {
   transition: visibility 0s, opacity 0.25s linear;
 }
 
+.react-demo-wrapper {
+  position: relative;
+}
+
 body.overlay-active {
   overflow: hidden;
 
