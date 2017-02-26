@@ -1,3 +1,5 @@
+import UserGreeting from '../common/UserGreeting';
+
 class Header extends React.Component {
 
     constructor(props, context) {
@@ -7,6 +9,15 @@ class Header extends React.Component {
         };
 
         this.toggleSearch = this.toggleSearch.bind(this);
+        this.toggleSideNav = this.toggleSideNav.bind(this);
+    }
+
+    toggleSideNav(event) {
+        event.preventDefault();
+        if (document && document.body) {
+            let orig = document.body.className;
+            document.body.className = orig + (orig ? ' ' : '') + 'side-nav-open';
+        }
     }
 
     toggleSearch(event) {
@@ -23,7 +34,7 @@ class Header extends React.Component {
         return (
             <header>
                 <form className={"header-search " + (this.state.searchActive ? 'search-active' : '')}>
-                    <a href="#" className="header-back-button">
+                    <a href="#" className="header-back-button" onClick={this.toggleSideNav}>
                         <img src={require('../../../assets/icons/arrow-purple.svg')}/>
                     </a>
                     <button type="submit" href="#" className="header-search-icon" onClick={this.toggleSearch}>
@@ -33,10 +44,7 @@ class Header extends React.Component {
                     <input type="text" placeholder="Search here" ref={(input)=> {this.searchInput = input;}}/>
                 </form>
                 <div className="header-options hidden-xs hidden-sm">
-                    <ul>
-                        <li><span>Hello, Somchai</span></li>
-                        <li>Twin Types Corporation</li>
-                    </ul>
+                    <UserGreeting/>
                     <button>
                         <img src={require('../../../assets/icons/arrow-grey.svg')}/>
                     </button>

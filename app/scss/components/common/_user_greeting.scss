@@ -1,0 +1,17 @@
+ul.user-greeting {
+
+  li {
+
+    &:nth-child(1) {
+      color: $orange;
+    }
+
+    &:nth-child(2) {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+  }
+
+}
