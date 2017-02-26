@@ -103,6 +103,7 @@ $negative-margin: -8px;
 
       .dropdown {
         margin-top: 4px;
+        position: relative;
 
         button {
           width: 100%;
@@ -111,10 +112,12 @@ $negative-margin: -8px;
           color: $light-text;
           border-color: $border-color;
           font-size: 12px;
+          padding-right: 24px;
 
           .caret {
-            float: right;
-            margin-top: 8px;
+            position: absolute;
+            right: 12px;
+            top: 14px;
           }
 
         }
