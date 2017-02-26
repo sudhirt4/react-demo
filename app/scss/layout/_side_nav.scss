@@ -1,7 +1,7 @@
 .side-nav {
 
   .side-nav-content {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -9,14 +9,19 @@
     background: $primary-color;
     z-index: 110;
     width: $sidenav-width;
+    margin-left: -$sidenav-width;
+    transition: margin-left 0.25s;
+
     padding-top: 50px;
 
     @include mq(md) {
       padding-top: 67px;
-      display: block;
+      visibility: visible;
+      margin-left: 0;
 
       .logo {
         line-height: 67px !important;
+        margin-left: 0 !important;
       }
 
     }
@@ -30,10 +35,11 @@
       position: fixed;
       top: 0;
       left: 0;
+      margin-left: -$sidenav-width;
       width: $sidenav-width;
       z-index: 111;
       background: $dark-primary-color;
-      transition: left 0.5s;
+      transition: margin-left 0.25s;
     }
 
     .user-greeting {
@@ -131,10 +137,13 @@
     .side-nav-content {
       margin-left: 0;
       display: block;
+      visibility: visible;
+      margin-left: 0;
 
       .logo {
         display: block;
         left: 0;
+        margin-left: 0;
       }
 
     }
