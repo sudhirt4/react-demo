@@ -1,5 +1,5 @@
-import SideNav from './sidenav/SideNav';
-import Header from './header/Header';
+import SideNav from './common/SideNav';
+import Header from './common/Header';
 import OrderEdit from './orders/edit';
 
 class App extends React.Component {
@@ -9,12 +9,16 @@ class App extends React.Component {
     }
 
     render() {
+        const loggedInUser = {
+            name: 'Somchai',
+            organization: 'TWIN TYPES CORPORATION'
+        };
         return (
             <div className="react-demo-wrapper">
-                <SideNav/>
+                <SideNav loggedInUser={loggedInUser}/>
                 <div className="body-wrapper container-fluid">
-                    <Header/>
-                    <OrderEdit/>
+                    <Header loggedInUser={loggedInUser} />
+                    <OrderEdit />
                 </div>
                 <div className="overlay"></div>
             </div>

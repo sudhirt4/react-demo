@@ -5,6 +5,7 @@ class OrderInvoice extends React.Component {
     }
 
     render() {
+        //TODO: Unclear on functional requirements
         return (
             <div className="common-block order-invoice card">
                 <table className="table table-responsive">

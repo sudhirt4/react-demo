@@ -1,4 +1,4 @@
-import UserGreeting from '../common/UserGreeting';
+import UserGreeting from '../utils/UserGreeting';
 
 class Header extends React.Component {
 
@@ -44,7 +44,7 @@ class Header extends React.Component {
                     <input type="text" placeholder="Search here" ref={(input)=> {this.searchInput = input;}}/>
                 </form>
                 <div className="header-options hidden-xs hidden-sm">
-                    <UserGreeting/>
+                    <UserGreeting user={this.props.loggedInUser} />
                     <button>
                         <img src={require('../../../assets/icons/arrow-grey.svg')}/>
                     </button>

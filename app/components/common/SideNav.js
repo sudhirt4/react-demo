@@ -1,4 +1,4 @@
-import UserGreeting from '../common/UserGreeting';
+import UserGreeting from '../utils/UserGreeting';
 
 class SideNav extends React.Component {
 
@@ -22,7 +22,7 @@ class SideNav extends React.Component {
                         nimbl3
                     </div>
                     <div className="visible-xs visible-sm">
-                        <UserGreeting/>
+                        <UserGreeting user={this.props.loggedInUser}/>
                     </div>
                     <ul className="side-nav-list">
                         <li>

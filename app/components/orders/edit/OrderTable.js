@@ -1,4 +1,4 @@
-import Currency from '../../common/Currency';
+import Currency from '../../utils/Currency';
 
 class OrderTable extends React.Component {
 
@@ -11,28 +11,7 @@ class OrderTable extends React.Component {
     }
 
     render() {
-        let orders = [];
-        for (var i = 2; i < 7; i++) {
-            orders.push({
-                id: i,
-                sku: 'TN SO 0000015',
-                description: 'Magnetic contactor - 9A (5.5 kW\,7.5 HP)\, control voltage 230 Vac',
-                brand: 'Schneider Electric',
-                list_price: 880,
-                discount: 30,
-                net_price: 660,
-                quantity: 16,
-                total: 500798823
-            });
-        }
-        orders.push({
-            id: 7,
-            sku: 'TN SO 0000015',
-            description: 'Magnetic contactor - 9A (5.5 kW\,7.5 HP)\, control voltage 230 Vac',
-            brand: 'Schneider Electric',
-            discount: 30,
-            quantity: 16
-        });
+        const orders = this.props.orders;
         return (
             <div className="common-block order-table">
                 <div className="card table-responsive">

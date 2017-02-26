@@ -2,8 +2,8 @@ const UserGreeting = React.createClass({
     render: function () {
         return (
             <ul className="user-greeting">
-                <li>Hello, Somchai</li>
-                <li>TWIN TYPES CORPORATION</li>
+                <li>Hello, {this.props.user.name}</li>
+                <li>{this.props.user.organization}</li>
             </ul>);
     }
 });
