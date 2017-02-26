@@ -45,3 +45,9 @@
     @error "No value could be retrieved for '#{$break}'";
   }
 }
+
+@mixin mq-mid() {
+  @media (max-width: $md-device) and (min-width: $sm-device) {
+    @content;
+  }
+}

@@ -60,13 +60,13 @@ class OrderNavigation extends React.Component {
                             <li>
                                 {customerInfo.address}
                             </li>
-                            <li className="hidden-xs hidden-sm">
+                            <li className="hidden-xs">
                                 {customerInfo.phone}
                             </li>
                         </ul>
                     </div>
                     <ul className="order-nav-dropdowns">
-                        <li className="hidden-xs hidden-sm">
+                        <li className="hidden-xs">
                             <span>Type</span>
                             <SelectDropdown onChange={this.dropdownChange('type')}
                                             options={this.state.type.options}
@@ -88,7 +88,7 @@ class OrderNavigation extends React.Component {
                     </ul>
                 </div>
                 <div className="order-nav-actions">
-                    <button className="btn btn-no-bg hidden-xs hidden-sm"
+                    <button className="btn btn-no-bg hidden-xs"
                             onClick={this.redirectBack}>
                         Back
                     </button>

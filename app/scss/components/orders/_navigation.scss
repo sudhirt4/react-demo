@@ -4,9 +4,28 @@ $negative-margin: -8px;
   padding-bottom: 20px;
   border-bottom: 1px solid $border-color;
 
+  @include mq-mid() {
+    padding-bottom: 0;
+    border-bottom: none;
+
+    &.common-block {
+
+      .order-nav-actions {
+        padding-bottom: 0;
+        padding-top: 16px;
+      }
+      .order-nav-info {
+        border: none;
+        box-shadow: none;
+      }
+
+    }
+
+  }
+
   .order-nav-options {
 
-    @include mq(md) {
+    @include mq(sm) {
       @include card(16px);
       display: flex;
       flex: 1;
@@ -26,7 +45,7 @@ $negative-margin: -8px;
     margin-bottom: $content-padding;
     font-size: 14px;
 
-    @include mq(md) {
+    @include mq(sm) {
 
       h2 {
         font-size: 16px;
@@ -49,17 +68,18 @@ $negative-margin: -8px;
 
     }
 
-    @include mq-min(md) {
+    @include mq-min(sm) {
       @include card(16px);
       @include remove-page-padding();
       margin-bottom: $content-padding;
       @include box-shadow();
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       flex: 1;
       text-align: left;
       margin-bottom: 0;
+      min-width: 200px;
     }
 
   }
@@ -121,7 +141,7 @@ $negative-margin: -8px;
 
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       margin-bottom: 0;
 
       float: right;
@@ -131,7 +151,6 @@ $negative-margin: -8px;
         text-align: center;
         padding-left: 16px;
         margin-right: 12px;
-        height: 38px;
         border-left: 1px solid $border-color;
         float: left;
         font-weight: bold;
@@ -171,7 +190,7 @@ $negative-margin: -8px;
       color: $white;
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       display: flex;
       padding-bottom: 16px;
       margin-left: 16px;

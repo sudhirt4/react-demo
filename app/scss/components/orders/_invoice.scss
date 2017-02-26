@@ -85,4 +85,12 @@
     @include box-shadow();
   }
 
+  @include mq-mid() {
+
+    &.common-block {
+      bottom: 60px;
+    }
+
+  }
+
 }
