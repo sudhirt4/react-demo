@@ -96,10 +96,11 @@
     background: $primary-color;
     color: $sidenav-text;
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 16px;
     padding: 6px 0 8px 0;
 
     span {
+      margin-top: 6px;
       color: $white;
       text-transform: none;
       display: block;

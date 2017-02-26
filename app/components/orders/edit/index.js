@@ -38,13 +38,11 @@ class OrderEdit extends React.Component {
                 <OrderInvoice/>
                 <OrderSearchBar/>
                 <OrdersTable/>
-                <h3>Remarks</h3>
                 <div className="common-block card">
+                    <h3>Remarks</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dignissimos quas! Aliquam amet
                         aperiam asperiores assumenda at aut autem beatae delectus deserunt ea eligendi esse est
-                        explicabo fugiat impedit incidunt labore laboriosam laborum magni minima mollitia numquam odio
-                        officia officiis pariatur porro quidem quisquam rem reprehenderit rerum saepe, sapiente
-                        similique sint totam veritatis vero voluptatem? Amet ducimus et sapiente. Debitis.</p>
+                        explicabo fugiat impedit incidunt labore</p>
                 </div>
             </main>);
     }

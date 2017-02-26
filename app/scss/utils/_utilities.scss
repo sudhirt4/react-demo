@@ -3,4 +3,6 @@
   margin-right: -$bootstrap-page-padding-sm;
 }
 
-
+@mixin box-shadow() {
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.11), 0 2px 3px 0 rgba(98, 98, 114, 0.21);
+}

@@ -1,7 +1,19 @@
 .order-table {
+  padding: 0 8px;
+
+  @include mq(md) {
+    padding: 0;
+  }
+
+  @include mq-min(md) {
+    .card {
+      padding: 0;
+    }
+  }
 
   table {
     margin-bottom: 0;
+    font-family: 'Montserrat-Light';
 
     thead {
 
@@ -16,6 +28,11 @@
     tr {
 
       td {
+
+        &:first-child {
+          font-weight: bold;
+        }
+
         padding: 18px 8px;
       }
 

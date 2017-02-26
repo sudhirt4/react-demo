@@ -1,6 +1,8 @@
 $negative-margin: -8px;
 
 .order-nav {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
 
   .order-nav-options {
 
@@ -12,20 +14,29 @@ $negative-margin: -8px;
 
   }
 
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
   .order-nav-info {
 
     text-align: center;
     margin-bottom: $content-padding;
     font-size: 14px;
 
-    h2 {
-      font-weight: bold;
-      font-size: 24px;
-      margin-bottom: 4px;
+    @include mq(md) {
+
+      h2 {
+        font-size: 16px;
+      }
+
     }
 
     ul {
       color: $light-text;
+      font-family: 'Montserrat-Light';
 
       li {
         margin-bottom: 4px;
@@ -42,7 +53,7 @@ $negative-margin: -8px;
       @include card(16px);
       @include remove-page-padding();
       margin-bottom: $content-padding;
-      box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.11), 0 2px 3px 0 rgba(98, 98, 114, 0.21);
+      @include box-shadow();
     }
 
     @include mq(md) {
@@ -55,6 +66,7 @@ $negative-margin: -8px;
 
   .order-nav-dropdowns {
     margin-bottom: $content-padding;
+    padding: 0 8px;
 
     > li {
       text-align: left;
@@ -152,6 +164,7 @@ $negative-margin: -8px;
   }
 
   .order-nav-actions {
+    padding: 0 8px;
 
     button {
       background: $light-text;
@@ -164,6 +177,7 @@ $negative-margin: -8px;
       margin-left: 16px;
 
       button {
+        font-family: 'Montserrat-Light';
         margin-left: 6px;
         min-width: 100px;
         align-self: flex-end;
@@ -176,6 +190,8 @@ $negative-margin: -8px;
 
   @include mq(md) {
     display: flex;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
 }

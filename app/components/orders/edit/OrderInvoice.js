@@ -28,13 +28,11 @@ class OrderInvoice extends React.Component {
                         <td><input className="small" type="text"/> % 1,826,00</td>
                     </tr>
                     </tbody>
-                    <tfoot>
-                    <tr>
-                        <td>Total</td>
-                        <td><span>THP 41,534.31</span></td>
-                    </tr>
-                    </tfoot>
                 </table>
+                <div className="order-invoice-footer">
+                    <label>Total</label>
+                    <span>THP 41,534.31</span>
+                </div>
             </div>);
     }
 }

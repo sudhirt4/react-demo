@@ -5,6 +5,12 @@ body {
   color: $black;
 }
 
+p {
+  font-size: 13px;
+  color: $light-text;
+  line-height: 18px;
+}
+
 button {
   outline: none;
 }

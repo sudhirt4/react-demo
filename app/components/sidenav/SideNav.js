@@ -21,7 +21,9 @@ class SideNav extends React.Component {
                     <div className="logo">
                         nimbl3
                     </div>
-                    <UserGreeting/>
+                    <div className="visible-xs visible-sm">
+                        <UserGreeting/>
+                    </div>
                     <ul className="side-nav-list">
                         <li>
                             <a href="#">
