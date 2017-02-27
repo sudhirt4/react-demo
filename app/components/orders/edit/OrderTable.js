@@ -42,7 +42,7 @@ class OrderTable extends React.Component {
                                     <td>
                                         {order.quantity}
                                         <button>
-                                            <img src={require('../../../../assets/icons/icon_edit.svg')}/>
+                                            <i className="icon icon-icon_edit" alt="Edit"></i>
                                         </button>
                                     </td>
                                     <td>{ this.renderCurrency(order.total) }</td>

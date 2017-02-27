@@ -2,7 +2,202 @@
   font-family: 'Montserrat-Regular';
   src: url('../../assets/fonts/Montserrat-Regular.ttf');
 }
+
 @font-face {
   font-family: 'Montserrat-Light';
   src: url('../../assets/fonts/Montserrat-Light.otf') format("opentype");
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/icons/sprite.svg);
+}
+
+.icon-arrow-grey {
+  background-position: 0 0;
+}
+
+.icon-arrow-in-circle {
+  background-position: -24px 0;
+}
+
+.icon-arrow-purple {
+  background-position: -48px 0;
+}
+
+.icon-arrow-white {
+  background-position: -72px 0;
+}
+
+.icon-box-purple {
+  background-position: -96px 0;
+}
+
+.icon-box-white {
+  background-position: -120px 0;
+}
+
+.icon-chart-purple {
+  background-position: -144px 0;
+}
+
+.icon-chart-white {
+  background-position: -168px 0;
+}
+
+.icon-close-white {
+  background-position: -192px 0;
+}
+
+.icon-controls-purple {
+  background-position: -216px 0;
+}
+
+.icon-controls-white {
+  background-position: -240px 0;
+}
+
+.icon-document-purple {
+  background-position: -264px 0;
+}
+
+.icon-document-white {
+  background-position: -288px 0;
+}
+
+.icon-factory-purple {
+  background-position: -312px 0;
+}
+
+.icon-factory-white {
+  background-position: -336px 0;
+}
+
+.icon-gear-purple {
+  background-position: -360px 0;
+}
+
+.icon-gear-white {
+  background-position: 0 -24px;
+}
+
+.icon-hierarchy-purple {
+  background-position: -24px -24px;
+}
+
+.icon-hierarchy-white {
+  background-position: -48px -24px;
+}
+
+.icon-icon_edit {
+  background-position: -72px -24px;
+}
+
+.icon-icon_fb {
+  background-position: -96px -24px;
+}
+
+.icon-icon_linkedin {
+  background-position: -120px -24px;
+}
+
+.icon-icon_mail {
+  background-position: -144px -24px;
+}
+
+.icon-icon_phone {
+  background-position: -168px -24px;
+}
+
+.icon-icon_play {
+  background-position: -192px -24px;
+}
+
+.icon-icon_plus {
+  background-position: -216px -24px;
+}
+
+.icon-icon_toggle_merged {
+  background-position: -240px -24px;
+}
+
+.icon-icon_twitter {
+  background-position: -288px -24px;
+}
+
+.icon-logo-white {
+  background-position: -312px -24px;
+}
+
+.icon-magnifying-glass {
+  background-position: 0 -48px;
+}
+
+.icon-mandatory-star {
+  background-position: -24px -48px;
+}
+
+.icon-noimage_placeholder {
+  background-position: -48px -48px;
+}
+
+.icon-people-purple {
+  background-position: -72px -48px;
+}
+
+.icon-people-white {
+  background-position: -96px -48px;
+}
+
+.icon-poweredby {
+  background-position: -120px -48px;
+}
+
+.icon-pricing-label-purple {
+  background-position: -168px -48px;
+}
+
+.icon-pricing-label-white {
+  background-position: -192px -48px;
+}
+
+.icon-shapes-purple {
+  background-position: -216px -48px;
+}
+
+.icon-shapes-white {
+  background-position: -240px -48px;
+}
+
+.icon-shopping-cart-purple {
+  background-position: -264px -48px;
+}
+
+.icon-shopping-cart-white {
+  background-position: -288px -48px;
+}
+
+.icon-switch-off {
+  background-position: -312px -48px;
+}
+
+.icon-switch-on {
+  background-position: -336px -48px;
+}
+
+.icon-tick-white {
+  background-position: -360px -48px;
+}
+
+li.active {
+
+  .icon-shopping-cart-purple {
+    background-position: -288px -48px;
+  }
+
+  //TODO:
+
 }

@@ -59,7 +59,7 @@ class OrderSearchBar extends React.Component {
         return (
             <div className={"common-block order-search-bar card " + (this.state.isTyping ? 'is-typing' : '')}>
                 <button>
-                    <img src={require('../../../../assets/icons/icon_plus.svg')}/>
+                    <i className="icon icon-icon_plus" alt="Add"></i>
                 </button>
                 <div className="pulsate"></div>
                 <input type="text" ref={(input)=> {this.searchInput = input;}}

@@ -27,61 +27,61 @@ class SideNav extends React.Component {
                     <ul className="side-nav-list">
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/controls-purple.svg')} alt="Dashboard"/>
+                                <i className="icon icon-controls-purple" alt="Dashboard"></i>
                                 Dashboard
                             </a>
                         </li>
                         <li className="active">
                             <a href="#">
-                                <img src={require('../../../assets/icons/shopping-cart-purple.svg')} alt="Orders"/>
+                                <i className="icon icon-shopping-cart-purple" alt="Orders"></i>
                                 Orders
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/factory-purple.svg')} alt="Companies"/>
+                                <i className="icon icon-factory-purple" alt="Companies"></i>
                                 Companies
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/box-purple.svg')} alt="Products"/>
+                                <i className="icon icon-box-purple" alt="Products"></i>
                                 Products
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/document-purple.svg')} alt="Documents"/>
+                                <i className="icon icon-document-purple" alt="Documents"></i>
                                 Documents
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/pricing-label-purple.svg')} alt="Pricing"/>
+                                <i className="icon icon-pricing-label-purple" alt="Pricing"></i>
                                 Pricing
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/shapes-purple.svg')} alt="Brands"/>
+                                <i className="icon icon-shapes-purple" alt="Brands"></i>
                                 Brands
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/gear-purple.svg')} alt="Settings"/>
+                                <i className="icon icon-gear-purple" alt="Settings"></i>
                                 Settings
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/chart-purple.svg')} alt="Reports"/>
+                                <i className="icon icon-chart-purple" alt="Reports"></i>
                                 Reports
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src={require('../../../assets/icons/people-purple.svg')} alt="Account Users"/>
+                                <i className="icon icon-people-purple" alt="Account Users"></i>
                                 Account Users
                             </a>
                         </li>
