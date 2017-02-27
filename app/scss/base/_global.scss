@@ -15,33 +15,6 @@ button {
   outline: none;
 }
 
-.overlay {
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: $black;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  transition: visibility 0s, opacity 0.25s linear;
-}
-
-.react-demo-wrapper {
-  position: relative;
-}
-
-body.overlay-active {
-  overflow: hidden;
-
-  .overlay {
-    visibility: visible;
-    opacity: 0.8;
-  }
-
-}
-
 .card {
   @include card();
 }
