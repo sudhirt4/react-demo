@@ -35,10 +35,10 @@ class Header extends React.Component {
             <header>
                 <form className={"header-search " + (this.state.searchActive ? 'search-active' : '')}>
                     <a href="#" className="header-back-button" onClick={this.toggleSideNav}>
-                        <img src={require('../../../assets/icons/arrow-purple.svg')}/>
+                        <img src={require('../../../assets/icons/arrow-purple.svg')} alt="Back"/>
                     </a>
-                    <button type="submit" href="#" className="header-search-icon" onClick={this.toggleSearch}>
-                        <img src={require('../../../assets/icons/magnifying-glass.svg')}/>
+                    <button type="submit" className="header-search-icon" onClick={this.toggleSearch}>
+                        <img src={require('../../../assets/icons/magnifying-glass.svg')} alt="Search"/>
                     </button>
                     <span>Edit ORD07070707</span>
                     <input type="text" placeholder="Search here" ref={(input)=> {this.searchInput = input;}}/>
@@ -46,7 +46,7 @@ class Header extends React.Component {
                 <div className="header-options hidden-xs hidden-sm">
                     <UserGreeting user={this.props.loggedInUser} />
                     <button>
-                        <img src={require('../../../assets/icons/arrow-grey.svg')}/>
+                        <img src={require('../../../assets/icons/arrow-grey.svg')} alt="User options"/>
                     </button>
                 </div>
             </header>)
