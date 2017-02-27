@@ -1,8 +1,10 @@
 .order-table {
   padding: 0 8px;
+  order: 1;
 
   @include mq(md) {
     padding: 0;
+    order: 0;
   }
 
   @include mq-min(md) {
